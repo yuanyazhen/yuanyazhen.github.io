@@ -52,6 +52,46 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+            <tr onmouseout="RobIR_stop()" onmouseover="RobIR_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="RobIR_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                  <source src="images/zipnerf.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="./images/albedo.png" width="256">
+                </div>
+                <script type="text/javascript">
+                  function lmv_start() {
+                    document.getElementById('RobIR_image').style.opacity = "1";
+                  }
+      
+                  function lmv_stop() {
+                    document.getElementById('RobIR_image').style.opacity = "0";
+                  }
+                  lmv_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">RobIR: Robust Inverse Rendering for
+                    High-Illumination Scenes</span>
+                <br>
+                <a href="https://ingra14m.github.io/">Ziyi Yang</a>,
+                Yanzhen Chen,
+                Xinyu Gao,
+                <strong>Yazhen Yuan</strong>,
+                Yu Wu,
+                <a href="http://www.cad.zju.edu.cn/home/rwang/"> Xiaowei Zhou</a>,
+                <a href="http://www.cad.zju.edu.cn/home/jin/"> Xiaogang Jin</a>
+                <br>
+                <em>NeurIPS 2024</em>
+                <br>
+                <p></p>
+                <p>
+                Recovering high-quality material maps from High-Illumination Scenes.
+                </p>
+              </td>
+            </tr>  
     
       <tr onmouseout="lmv_stop()" onmouseover="lmv_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
